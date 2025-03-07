@@ -1,0 +1,77 @@
+.window{
+    padding: 1%;
+    background: var(--window-background-color);
+    border-radius: 8px;
+    width: 40%;
+    position: absolute;
+    top: 2%;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.cross, .delete{
+    background: none;
+}
+.cross:hover, .delete:hover{
+    opacity: 0.6;
+}
+
+.cross{
+    margin: 0 0 0 auto;
+    display: block;
+}
+
+.cross img{
+    width: 20px;
+    height: 20px;
+}
+
+.text{
+    margin: 1%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.delete{
+    display: block;
+    margin: 0 auto;
+}
+
+.delete img{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 900px ) {
+    .window{
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px ) {
+    .window{
+        border-radius: 6px;
+        width: 60%;
+    }
+
+    .cross img{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .text{
+        font-size: 14px;
+    }
+    
+    .delete img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 430px ) {
+    .text{
+        font-size: 12px;
+    }
+}
